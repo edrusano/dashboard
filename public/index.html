@@ -1,41 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dashboard &lsaquo; Sample Blog &#8212; WordPress</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" id="viewport-meta" content="width=device-width, initial-scale=1">
+</head>
+<body class="wp-admin wp-core-ui no-js index-php auto-fold admin-bar branch-4-9 version-4-9-9 admin-color-fresh locale-en-us mobile no-customize-support no-svg">
+  <div id="wpwrap">
+    <div id="adminmenumain" role="navigation" aria-label="Main menu">
+	  <a href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+	  <a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>
+	  <div id="adminmenuback"></div>
+	  <div id="adminmenuwrap"></div>
+    </div>
+    <div id="wpcontent">
+      <div id="wpbody" role="main">
+        <div id="wpbody-content" aria-label="Main content" tabindex="0">
+          <div class="wrap">
+            <h1>Dashboard</h1>
+	        <div id="dashboard-widgets-wrap">
+	          <div id="dashboard-widgets" class="metabox-holder">
+	            <div id="postbox-container-1" class="postbox-container">
+		          <div id="normal-sortables" class="meta-box-sortables">
+			        <div id="wordlift-dashboard-widget" class="postbox " >
+			          <button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: WordLift Dashboard</span><span class="toggle-indicator" aria-hidden="true"></span></button>
+			          <h2 class='hndle'><span>WordLift Dashboard</span></h2>
+<div class="inside">
+	<div id="wl-dashboard-widget-inner-wrapper">
+		<div class="wl-stat-card">
+			<div class="wl-stat-graph-wrapper">
+				<h4>enriched posts <a href="http://docs.wordlift.it/en/latest/faq.html#what-is-content-enrichment" target="_blank"><i class="wl-info"></i></a></h4>
+				<svg id="wl-posts-pie-chart" viewBox="0 0 32 32"><circle r="16" cx="16" cy="16" /></svg>
+			</div>
+			<p><span id="wl-dashboard-widget-annotatedPostsPercentage" class="wl-stat-value"></span>, of your <a href="http://localhost:8010/wp/wp-admin/edit.php">posts</a> have been enriched with WordLift. This means <span id="wl-dashboard-widget-annotated_posts" class="wl-stat-value"></span> enriched posts out of a total of <span id="wl-dashboard-widget-posts" class="wl-stat-value"></span>.</p>
+		</div>
+		<div class="wl-stat-card">
+			<div class="wl-stat-graph-wrapper">
+				<h4>average entity rating <a href="http://docs.wordlift.it/en/latest/faq.html#what-factors-determine-the-rating-of-an-entity" target="_blank"><i class="wl-info"></i></a></h4>
+				<svg id="wl-entities-gauge-chart" viewBox="0 0 32 32"><circle r="16" cx="16" cy="16" class="baseline" /><circle r="16" cx="16" cy="16" class="stat" /></svg>
+			</div>
+			<p>You have <span id="wl-dashboard-widget-entities" class="wl-stat-value"></span> entities in your <a href="http://localhost:8010/wp/wp-admin/edit.php?post_type=entity">vocabulary</a> with an average rating of <span id="wl-dashboard-widget-rating" class="wl-stat-value"></span>.</p>
+		</div>
+		<div class="wl-stat-card">
+			<div class="wl-stat-graph-wrapper">
+				<h4>triples in your graph <a href="http://docs.wordlift.it/en/latest/faq.html#what-is-a-triple" target="_blank"><i class="wl-info"></i></a></h4>
+				<div class="wl-triples">
+					<span id="wl-dashboard-widget-triples">53220</span>
+					<span class="wl-triples-label">triples</span>
+				</div>
+			</div>
+			<p>The size of your knowledge graph corresponds to <span id="wl-dashboard-widget-wikidata" class="wl-stat-value"></span> of the size of <a href="https://www.wikidata.org/">Wikidata</a></p>
+		</div>
+	</div>
+</div>
+			        </div>
+					<div id="wordlift-dashboard-react-widget" class="postbox " >
+  					<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: WordLift Dashboard</span><span class="toggle-indicator" aria-hidden="true"></span></button>
+  					<h2 class='hndle'><span>WordLift React Dashboard</span></h2>
+  					<div class="inside"></div>  
+					</div>
+		          </div>
+	            </div>
+	            <div id="postbox-container-2" class="postbox-container">
+		          <div id="side-sortables" class="meta-box-sortables">
+			        <div id="normal-sortables" class="meta-box-sortables">
+				    </div>
+		          </div>
+	            </div>
+	            <div id="postbox-container-3" class="postbox-container">
+		          <div id="column3-sortables" class="meta-box-sortables">
+		          </div>
+	            </div>
+	            <div id="postbox-container-4" class="postbox-container">
+		          <div id="column4-sortables" class="meta-box-sortables">
+		          </div>
+	            </div>
+	          </div>
+			</div>
+          </div><!-- wrap -->
+          <div class="clear"></div>
+        </div><!-- wpbody-content -->
+        <div class="clear"></div>
+      </div><!-- wpbody -->
+      <div class="clear"></div>
+    </div><!-- wpcontent -->
+    <div id="wpfooter" role="contentinfo">
+	  <p id="footer-left" class="alignleft">
+	    <span id="footer-thankyou">Thank you for creating with <a href="https://wordpress.org/">WordPress</a>.</span>
+  	</p>
+	  <p id="footer-upgrade" class="alignright">
+		<strong><a href="http://localhost:8010/wp/wp-admin/update-core.php">Get Version 5.0.3</a></strong>
+  	</p>
+	  <div class="clear"></div>
+    </div>
+  </div><!-- wpwrap -->
+</body>
 </html>

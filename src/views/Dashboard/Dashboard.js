@@ -18,9 +18,40 @@ const Dashboard = ({
       </Card>
     </section>
     <section>
-      <Card show="list" title={stats.keywords.title}>
-        <DefList stats="{stats.keywords.value}">
+      <Card title={stats.keywords.title}>
+        <DefList show="list">
           {stats.keywords.value}
+        </DefList>
+      </Card>
+    </section>
+    <section>
+      <Card title={stats.entities.title}>
+        <DefList show="chart">
+          {stats.entities.value}
+        </DefList>
+      </Card>
+    </section>
+    <section>
+      <Card title={stats.enrich.title}>
+        <DefList show="compact">
+          {stats.enrich.value}
+        </DefList>
+      </Card>
+      <Card title={stats.vocabulary.title}>
+        <DefList show="compact">
+          {stats.vocabulary.value}
+        </DefList>
+      </Card>
+      <Card title={stats.pimp.title}>
+        <DefList show="compact">
+          {stats.pimp.value}
+        </DefList>
+      </Card>
+    </section>
+    <section>
+      <Card title={stats.triples.title}>
+        <DefList show="chart">
+          {stats.triples.value}
         </DefList>
       </Card>
     </section>

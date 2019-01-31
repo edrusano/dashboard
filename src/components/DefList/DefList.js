@@ -10,13 +10,13 @@ const DefList = ({
   stats,
   children
 }) => (
-  <dl>
+  <dl className={'wl-deflist-' + show}>
   { children.map((stat, index) => (
     <React.Fragment>
     <dt key={index}>{stat.title}</dt>
     <dd>
       <em>{stat.value}</em>{ stat.max && 
-      <span> / {stat.max}</span> }
+      <React.Fragment> /{stat.max}</React.Fragment> }
     </dd>
     </React.Fragment>
   ))}

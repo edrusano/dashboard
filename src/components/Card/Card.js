@@ -13,9 +13,12 @@ const Card = ({
 }) => (
   <figure className={'wl-card-' + show}>
     <figcaption>
-      <h4>{title}</h4>
+      <i class="dashicons dashicons-editor-help" /><strong>{title}</strong>
+      { icons ? <i class="wl-icon-woorank" /> : '' }
     </figcaption>
-    {children}
+    <p>
+      {children}
+    </p>
   </figure>
 );
 

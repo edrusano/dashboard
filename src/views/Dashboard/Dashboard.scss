@@ -1,25 +1,93 @@
 $acolor: #007aff;
 $scolor: #007aaa;
 $bcolor: #eee;
-$padding: 4px;
+$sect-margin: 16px 0;
+$padding: 0;
+$card-border: 1px solid $bcolor;
 
 .wl-dashboard {
   padding: $padding;
-  
+  margin: 0;
+  font-size: 9px;
+  & section {
+    display: flex;
+    margin: $sect-margin;
+  } 
   & figure {
-    padding: $padding;
-    border: 1px solid $bcolor;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 4px;
+    border: $card-border;
   }
-  
+  & figure:not(:last-child) {
+    margin-right: 8px;
+  }
   & figcaption {
+    display: flex;
     background-color: $bcolor;
+    line-height: 20px;
+    height: 24px;
+    padding: 2px 0;
+    margin: 0 -4px;
+
+    & strong {
+      flex-grow: 1;
+    }
+    & i {
+      height: 20px;
+      width: 20px;
+    }
+    & i:first-child {
+      font-size: 14px;
+      line-height: 20px;
+      color: $acolor;
+    }
+    & .wl-icon-woorank {
+      background: url(./images/icon-woorank.svg) center/60% no-repeat;
+    }
   }
-  
-  & dt, dd {
-    display: inline-block;
+  & p {
+    font-size: inherit;
   }
-  
+  & dl {
+    display: flex;
+  }
+  & dd {
+    margin: 0;
+    padding: 0 4px;
+  }
+  & em {
+    font-style: normal;
+    color: $acolor;
+  }
   & .wl-card-news {
     background-color: $bcolor;
   }
+  & .wl-deflist-list dd {
+    flex: 1 0 33%;
+  }
+  & .wl-deflist-list dt {
+    flex: 0 0 auto;
+  }
+  & .wl-deflist-chart {
+    flex-wrap: wrap;
+  }
+  & .wl-deflist-chart dt {
+    flex: 1 0 30%;
+  }
+  & .wl-deflist-chart dd {
+    flex: 1 0 70%;
+  }
+  & .wl-deflist-compact {
+    flex-direction: column-reverse;
+  }
+  & .wl-deflist-compact dt {
+    text-align: right;
+    color: $acolor
+  }
+  & .wl-deflist-compact dd {
+    font-size: 18px;
+    text-align: center;
+  }
+  
 }
