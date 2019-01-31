@@ -13,7 +13,7 @@ const Card = ({
 }) => (
   <figure className={'wl-card-' + show}>
     <figcaption>
-      <i class="dashicons dashicons-editor-help" /><strong>{title}</strong>
+      <i className={ show === 'news' ? 'far fa-question-circle' : 'dashicons dashicons-editor-help' } /><strong>{title}</strong>
       { icons ? <i class="wl-icon-woorank" /> : '' }
     </figcaption>
     <p>

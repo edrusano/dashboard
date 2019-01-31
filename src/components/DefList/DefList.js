@@ -4,10 +4,11 @@
  * @since 3.20.0
  */
 import React from 'react';
+//import BarChart from './../../components/BarChart';
 
 const DefList = ({
   show,
-  stats,
+  max,
   children
 }) => (
   <dl className={'wl-deflist-' + show}>
@@ -15,8 +16,15 @@ const DefList = ({
     <React.Fragment>
     <dt key={index}>{stat.title}</dt>
     <dd>
-      <em>{stat.value}</em>{ stat.max && 
-      <React.Fragment> /{stat.max}</React.Fragment> }
+    { (show === 'chart') ? (
+      <React.Fragment></React.Fragment>
+    ) : (
+      <React.Fragment>
+        <em>{stat.value}</em>
+        { stat.max && <React.Fragment>/{stat.max}</React.Fragment> }
+      </React.Fragment>
+      
+    )}
     </dd>
     </React.Fragment>
   ))}

@@ -56,6 +56,15 @@ $card-border: 1px solid $bcolor;
     margin: 0;
     padding: 0 4px;
   }
+  & dd div {
+    height: 14px;
+  }
+  & dd div:first-child {
+    background-color: $acolor;
+  }
+  & dd div:last-child {
+    background-color: $scolor;
+  }
   & em {
     font-style: normal;
     color: $acolor;

@@ -18,7 +18,7 @@ const Dashboard = ({
       </Card>
     </section>
     <section>
-      <Card title={stats.keywords.title}>
+      <Card title={stats.keywords.title} icons={true}>
         <DefList show="list">
           {stats.keywords.value}
         </DefList>
@@ -26,7 +26,7 @@ const Dashboard = ({
     </section>
     <section>
       <Card title={stats.entities.title}>
-        <DefList show="chart">
+        <DefList show="chart" max={stats.entities.max}>
           {stats.entities.value}
         </DefList>
       </Card>

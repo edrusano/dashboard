@@ -21,10 +21,15 @@ const stats = {
   },
   entities: {
     title: "Top entities",
+    legend: [
+      "Link with entities",
+      "Post with entities"
+    ],
     value: [
-      { title: "Senato della republica", value: 35 },
-      { title: "Errore mio", value: 1234 }
-    ]
+      { title: "Senato della republica", value: [35,25] },
+      { title: "Errore mio", value: [30,40] }
+    ],
+    max: 40
   },
   enrich: {
     title: "Posts enriched",
