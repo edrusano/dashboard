@@ -8,13 +8,19 @@ import React from 'react';
 const Card = ({
   show,
   title,
-  icons,
+  help,
+  notes,
   children
 }) => (
-  <figure className={'wl-card-' + show}>
-    <figcaption>
-      <i className={ show === 'news' ? 'far fa-question-circle' : 'dashicons dashicons-editor-help' } /><strong>{title}</strong>
-      { icons ? <i class="wl-icon-woorank" /> : '' }
+  <figure className={show ? "wl-card-" + show : null}>
+    <figcaption>{ help && 
+      <a href={help}><i class="dashicons dashicons-editor-help" /></a>
+      } <strong>{title}</strong> { notes && notes.map((note, index) => (
+      <React.Fragment>
+        <b>{note.label}</b>
+        <i key={index} className={"wl-icon-" + note.type} style={ {backgroundImage: "url(./assets/img/"+note.icon+")"} } />
+      </React.Fragment>
+      ))}
     </figcaption>
     <p>
       {children}

@@ -1,5 +1,5 @@
 $acolor: #007aff;
-$scolor: #007aaa;
+$scolor: #0D4AB8;
 $bcolor: #eee;
 $sect-margin: 16px 0;
 $padding: 0;
@@ -16,7 +16,6 @@ $card-border: 1px solid $bcolor;
   & figure {
     flex-grow: 1;
     margin: 0;
-    padding: 0 4px;
     border: $card-border;
   }
   & figure:not(:last-child) {
@@ -26,38 +25,48 @@ $card-border: 1px solid $bcolor;
     display: flex;
     background-color: $bcolor;
     line-height: 20px;
-    height: 24px;
-    padding: 2px 0;
-    margin: 0 -4px;
+    padding: 2px 4px;
 
     & strong {
       flex-grow: 1;
+      display: inline-block;
+    }
+    & b {
+      font-weight: normal;
     }
     & i {
       height: 20px;
       width: 20px;
+      line-height: 20px;
     }
     & i:first-child {
       font-size: 14px;
-      line-height: 20px;
+      text-align: left;
       color: $acolor;
+      margin: 0 -4px 0 -2px;
     }
     & .wl-icon-woorank {
-      background: url(./images/icon-woorank.svg) center/60% no-repeat;
+      background: right top/80% no-repeat;
+    }
+    & .wl-icon-country {
+      background: center/80% no-repeat;
     }
   }
   & p {
     font-size: inherit;
+    padding: 0 4px;
   }
   & dl {
     display: flex;
   }
   & dd {
     margin: 0;
-    padding: 0 4px;
+    padding-left: 8px;
+    /*padding: 8px 0 8px 8px;*/
   }
   & dd div {
-    height: 14px;
+    height: 8px;
+    border-radius: 0 4px 4px 0;
   }
   & dd div:first-child {
     background-color: $acolor;
@@ -80,12 +89,15 @@ $card-border: 1px solid $bcolor;
   }
   & .wl-deflist-chart {
     flex-wrap: wrap;
+    align-items: center;
   }
   & .wl-deflist-chart dt {
-    flex: 1 0 30%;
+    flex: 0 1 35%;
   }
   & .wl-deflist-chart dd {
-    flex: 1 0 70%;
+    flex: 1 1 60%;
+    background-color: #edf6fe;
+    padding: 8px 0;
   }
   & .wl-deflist-compact {
     flex-direction: column-reverse;
